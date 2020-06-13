@@ -5,6 +5,7 @@
         <logo />
         <vuetify-logo />
       </div>
+      {{ test }}
       <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
@@ -70,6 +71,11 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  data() {
+    return {
+      test: string = '2'
+    }
   }
 }
 </script>
